@@ -1,0 +1,309 @@
+    <link rel="stylesheet" href="/widget/shop/dist/steps.css">
+    <link rel="stylesheet" href="/widget/shop/dist/theme.css">
+
+    <div class="tm-page">
+        <div class="lds-wrapper"></div>
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        <div id="page#0"
+            class="rf-form rf-steps uk-section-default uk-section uk-section-small uk-padding-remove-bottom">
+            <div class="uk-container uk-container-expand">
+                <div id="step-1" class="step tm-grid-expand uk-child-width-1-1 uk-grid-margin uk-grid uk-grid-stack">
+                    <div class="uk-first-column">
+                        <h2 class="uk-text-warning" data-id="page#0-0-0-0"> Шаг 1 - выбор товара </h2>
+                        <div data-id="page#0-0-0-1" id="page#0-0-0-1" class="uk-margin">
+                            <div id="products" class="products uk-child-width-1-1 uk-child-width-1-2@m uk-flex-center uk-flex-middle uk-grid-small uk-grid-match uk-grid uk-grid-stack"
+                                uk-grid="">
+                            </div>
+                            <div id="products_attr" class="products uk-child-width-1-2 uk-child-width-1-3@m uk-flex-center uk-grid-small uk-grid-match uk-grid"
+                                 uk-grid="">
+                            </div>
+                        </div>
+                        <div class="uk-panel uk-margin" id="totalProducts"></div>
+                        <div data-id="page#0-0-0-3" class="uk-margin uk-text-center">
+                            <button id="step1_btn" style="display: none" class="el-content rf-next uk-button uk-button-default nextStep"
+                                title="Далее - выбор доставки">
+                                <span class="uk-text-middle">Далее - выбор доставки</span>
+                                <span uk-icon="chevron-double-right" class="uk-icon">
+                                    <svg width="20" height="20"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                        data-svg="chevron-double-right">
+                                        <polyline fill="none" stroke="#000" stroke-width="1.03"
+                                            points="10 6 14 10 10 14"></polyline>
+                                        <polyline fill="none" stroke="#000" stroke-width="1.03" points="6 6 10 10 6 14">
+                                        </polyline>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div id="step1_btn_back" style="display: none;" class="uk-position-absolute2 pull-left">
+                                <span class="el-content rf-previous uk-text-warning" title="Previous">
+                                    <span uk-icon="chevron-double-left" class="uk-icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="chevron-double-left">
+                                            <polyline fill="none" stroke="#000" stroke-width="1.03"
+                                                      points="10 14 6 10 10 6"></polyline>
+                                            <polyline fill="none" stroke="#000" stroke-width="1.03"
+                                                      points="14 14 10 10 14 6"></polyline>
+                                        </svg>
+                                    </span>
+                                    <span class="uk-text-middle">Назад</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div data-id="page#0-0-0-3" class="uk-margin uk-text-center">
+                            <button id="step1_attr_btn" class="el-content rf-next uk-button uk-button-default"
+                                    title="Далее - выбор доп. аксессуаров">
+                                <span class="uk-text-middle">Далее - выбор доп. аксессуаров</span>
+                                <span uk-icon="chevron-double-right" class="uk-icon">
+                                    <svg width="20" height="20"
+                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                         data-svg="chevron-double-right">
+                                        <polyline fill="none" stroke="#000" stroke-width="1.03"
+                                                  points="10 6 14 10 10 14"></polyline>
+                                        <polyline fill="none" stroke="#000" stroke-width="1.03" points="6 6 10 10 6 14">
+                                        </polyline>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- шаг 2 -->
+                </div>
+                <div id="step-2" class="step tm-grid-expand uk-child-width-1-1 uk-margin-remove-vertical uk-grid uk-grid-stack"
+                    uk-grid="">
+                    <div class="uk-first-column">
+                        <h2 class="uk-text-warning" data-id="page#0-1-0-0">Шаг 2 - Доставка и оплата</h2>
+                        <div id="selectCountry" class="uk-margin selectCity">
+                            <label class="uk-form-label rf-label" for="country">Страна:</label>
+                            <div class="uk-form-controls">
+                                <div class="uk-inline uk-width-1-1">
+                                    <form id="searchCountry" class="searchCountry" autocomplete="off">
+                                        <span class="uk-form-icon uk-icon" uk-icon="icon: location"><svg width="20"
+                                                height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                                data-svg="location">
+                                                <path fill="none" stroke="#000" stroke-width="1.01"
+                                                    d="M10,0.5 C6.41,0.5 3.5,3.39 3.5,6.98 C3.5,11.83 10,19 10,19 C10,19 16.5,11.83 16.5,6.98 C16.5,3.39 13.59,0.5 10,0.5 L10,0.5 Z">
+                                                </path>
+                                                <circle fill="none" stroke="#000" cx="10" cy="6.8" r="2.3"></circle>
+                                            </svg>
+                                        </span>
+                                        <input readonly value="Россия" type="text" id="country" class="uk-input rf-input" autocomplete="off" name="country" placeholder="Выберите вашу страну">
+                                        <ul id="contriesList" class="selectList">
+                                            <li><button type="button" data-value="Россия">Россия</button></li>
+                                            <li><button type="button" data-value="Беларусь">Беларусь</button></li>
+                                            <li><button type="button" data-value="Казахстан">Казахстан</button></li>
+                                            <li><button type="button" data-value="Армения">Армения</button></li>
+                                            <li><button type="button" data-value="Киргизия">Киргизия</button></li>
+                                        </ul>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="selectCity" class="uk-margin selectCity">
+                            <label class="uk-form-label rf-label" for="input-page#0-1-0-1">Город/населенный пункт:</label>
+                            <div class="uk-form-controls">
+                                <div class="uk-inline uk-width-1-1">
+                                    <form id="searchCity" class="searchAddress" autocomplete="off">
+                                        <span class="uk-form-icon uk-icon" uk-icon="icon: location"><svg width="20"
+                                                height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                                data-svg="location">
+                                                <path fill="none" stroke="#000" stroke-width="1.01"
+                                                    d="M10,0.5 C6.41,0.5 3.5,3.39 3.5,6.98 C3.5,11.83 10,19 10,19 C10,19 16.5,11.83 16.5,6.98 C16.5,3.39 13.59,0.5 10,0.5 L10,0.5 Z">
+                                                </path>
+                                                <circle fill="none" stroke="#000" cx="10" cy="6.8" r="2.3"></circle>
+                                            </svg>
+                                        </span>
+                                        <input type="text" id="city" class="uk-input rf-input" autocomplete="off" name="city" placeholder="Введите ваш город/населенный пункт">
+                                        <ul id="citiesList" class="selectList"></ul>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="selectTypeDelivery" class="uk-margin selectTypeDelivery">
+                            <div class="uk-h3">Выберите способ и службу доставки:</div>
+                            <div class="uk-child-width-1-1 uk-child-width-1-3@m uk-flex-center uk-grid-match uk-grid" uk-grid=""></div>
+                        </div>
+                        <div id="selectMapPoint" class="selectMapPoint">
+                            <div class="uk-h3">Выберите пункт самовывоза на карте:</div>
+                            <div id="mapPvz"></div>
+                        </div>
+                        <div id="mapPvzshow" style="display: none"><a href="javascript: void(0)">Изменить пункт самовывоза</a></div>
+                        <div id="selectCurier" class="uk-margin selectCurier">
+                            <label class="uk-form-label rf-label" for="input-page#0-2-0-3">Адрес доставки:</label>
+                            <div class="uk-form-controls">
+                                <div class="uk-inline uk-width-1-1">
+                                    <form id="searchAddress" class="searchAddress" autocomplete="off">
+                                        <span class="uk-form-icon uk-icon" uk-icon="icon: location">
+                                            <svg width="20"
+                                                height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                                data-svg="location">
+                                                <path fill="none" stroke="#000" stroke-width="1.01"
+                                                    d="M10,0.5 C6.41,0.5 3.5,3.39 3.5,6.98 C3.5,11.83 10,19 10,19 C10,19 16.5,11.83 16.5,6.98 C16.5,3.39 13.59,0.5 10,0.5 L10,0.5 Z">
+                                                </path>
+                                                <circle fill="none" stroke="#000" cx="10" cy="6.8" r="2.3"></circle>
+                                            </svg>
+                                        </span>
+                                        <input type="text" id="addressCurier" class="uk-input rf-input" name="address" placeholder="Введите улицу, дом, квартиру">
+                                        <input type="hidden" id="houseCurier" value="">
+                                        <ul id="addressList" class="selectList"></ul>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="totalDelivery" class="uk-margin footerDelivery">
+                            <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-grid-match uk-grid" uk-grid="">
+                                <div class="uk-first-column" id="totalDelivery-1"></div>
+                                <div id="totalDelivery-2">
+                                    <div class="el-item uk-panel uk-margin-remove-first-child">
+                                        <h3 class="el-title uk-margin-top uk-margin-remove-bottom"> Оплата: </h3>
+                                        <div class="el-content uk-panel uk-margin-top" id="selectPayment"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-position-absolute2 uk-margin pull-left">
+                            <span class="el-content rf-previous uk-text-warning prevStep" style="cursor: pointer;" title="Previous">
+                                <span uk-icon="chevron-double-left" class="uk-icon"><svg width="20" height="20"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                        data-svg="chevron-double-left">
+                                        <polyline fill="none" stroke="#000" stroke-width="1.03"
+                                            points="10 14 6 10 10 6"></polyline>
+                                        <polyline fill="none" stroke="#000" stroke-width="1.03"
+                                            points="14 14 10 10 14 6"></polyline>
+                                    </svg></span>
+                                <span class="uk-text-middle">Назад</span>
+                            </span>
+                        </div>
+                        <div class="uk-text-right uk-margin pull-right">
+                            <button class="el-content rf-next uk-button uk-button-default nextStep" title="Next">
+                                <span uk-icon="chevron-double-right" class="uk-icon"><svg width="20" height="20"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                        data-svg="chevron-double-right">
+                                        <polyline fill="none" stroke="#000" stroke-width="1.03"
+                                            points="10 6 14 10 10 14"></polyline>
+                                        <polyline fill="none" stroke="#000" stroke-width="1.03" points="6 6 10 10 6 14">
+                                        </polyline>
+                                    </svg></span>
+                                <span class="uk-text-middle">Вперёд</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="step-3" class="step tm-grid-expand uk-margin-remove-vertical uk-grid">
+                    <div class="uk-width-1-2@m uk-first-column">
+                        <h2 class="uk-text-warning" data-id="page#0-3-0-0"> Шаг 3 - Контактные данные </h2>
+                        <form>
+                            <div data-id="page#0-3-0-1" class="uk-margin"> <label class="uk-form-label rf-label"
+                                    for="input-lastName">Ваша Фамилия*</label>
+                                <div class="uk-form-controls">
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon uk-icon" uk-icon="icon: user"><svg width="20" height="20"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="user">
+                                                <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.9" cy="6.4"
+                                                    r="4.4"></circle>
+                                                <path fill="none" stroke="#000" stroke-width="1.1"
+                                                    d="M1.5,19 C2.3,14.5 5.8,11.2 10,11.2 C14.2,11.2 17.7,14.6 18.5,19.2">
+                                                </path>
+                                            </svg></span>
+                                        <input type="text" required class="uk-input rf-input" id="input-lastName" name="lastName"> </div>
+                                </div>
+                            </div>
+                            <div data-id="page#0-3-0-1" class="uk-margin"> <label class="uk-form-label rf-label"
+                                for="input-firstName">Ваше Имя*</label>
+                            <div class="uk-form-controls">
+                                <div class="uk-inline uk-width-1-1">
+                                    <span class="uk-form-icon uk-icon" uk-icon="icon: user"><svg width="20" height="20"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="user">
+                                            <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.9" cy="6.4"
+                                                r="4.4"></circle>
+                                            <path fill="none" stroke="#000" stroke-width="1.1"
+                                                d="M1.5,19 C2.3,14.5 5.8,11.2 10,11.2 C14.2,11.2 17.7,14.6 18.5,19.2">
+                                            </path>
+                                        </svg></span>
+                                    <input type="text" required class="uk-input rf-input" id="input-firstName" name="firstName"> </div>
+                            </div>
+                        </div>
+                            <div data-id="page#0-3-0-2" class="uk-margin"> <label class="uk-form-label rf-label"
+                                    for="input-phone">Ваш телефон *</label>
+                                <div class="uk-form-controls">
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon uk-icon" uk-icon="icon: phone"><svg width="20" height="20"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="phone">
+                                                <path fill="none" stroke="#000"
+                                                    d="M15.5,17 C15.5,17.8 14.8,18.5 14,18.5 L7,18.5 C6.2,18.5 5.5,17.8 5.5,17 L5.5,3 C5.5,2.2 6.2,1.5 7,1.5 L14,1.5 C14.8,1.5 15.5,2.2 15.5,3 L15.5,17 L15.5,17 L15.5,17 Z">
+                                                </path>
+                                                <circle cx="10.5" cy="16.5" r=".8"></circle>
+                                            </svg></span>
+                                        <input type="text" class="uk-input rf-input" id="input-phone" name="phone" required
+                                            > </div>
+                                </div>
+                            </div>
+                            <div data-id="page#0-3-0-2" class="uk-margin"> <label class="uk-form-label rf-label"
+                                                                                  for="input-phone">Ваш e-mail</label>
+                                <div class="uk-form-controls">
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon uk-icon" uk-icon="icon: email"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" stroke="#000" points="1.4,6.5 10,11 18.6,6.5"/><path d="M 1,4 1,16 19,16 19,4 1,4 Z M 18,15 2,15 2,5 18,5 18,15 Z"/></svg></span>
+                                        <input type="email" class="uk-input rf-input" id="input-email" name="email"
+                                        > </div>
+                                </div>
+                            </div>
+                            <div class="rf-textarea uk-margin" data-id="page#0-3-0-3"> <label class="uk-form-label"
+                                    for="textarea-page#0-3-0-3">Комментарий к заказу</label>
+                                <div class="uk-form-controls">
+                                    <textarea id="texterea-page#0-3-0-3" class="uk-textarea " name="comment"
+                                        placeholder=""></textarea>
+                                </div>
+                            </div>
+                            <div data-id="page#0-3-0-4" class="uk-margin">
+                                <button type="submit" class="el-content rf-button-send uk-button uk-button-default"
+                                    title="Оформить заказ">
+                                    Оформить заказ
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="uk-grid-item-match uk-flex-middle uk-width-1-2@m">
+                        <div class="uk-panel uk-width-1-1">
+                            <div class="uk-panel uk-margin" data-id="page#0-3-1-0">Выбрано <span id="productCount"></span> на сумму <span id="productCost"></span>
+                                рублей
+                                <br>Город: <span id="deliveryCity"></span>
+                                <br>Служба доставки: <span id="deliveryProvider"></span>
+                                <br>Тип доставки: <span id="deliveryService"></span>
+                                <br>Адрес доставки: <span id="deliveryAddress"></span>
+                                <br>Срок доставки: <span id="deliveryDays"></span>
+                                <br>Тип оплаты: <span id="paymentType"></span>
+                                <br>Скидка: <span class="salesTotal"></span> рублей
+                                <!--<br>Наценка: <span class="marginTotal"></span> рублей-->
+                                <br>Итоговая стоимость заказа: <span class="uk-h4 uk-text-warning"><span class="totalPrice"></span> рублей</span>
+                                <br>В т.ч. стоимость доставки: <span id="deliveryCost"></span> рублей</div>
+                            <div data-id="page#0-3-1-1" class="uk-margin">
+                                <span class="el-content rf-previous prevStep uk-text-warning" title="Изменить заказ">
+                                    <span uk-icon="chevron-double-left" class="uk-icon">
+                                        <svg width="20" height="20"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                            data-svg="chevron-double-left">
+                                            <polyline fill="none" stroke="#000" stroke-width="1.03"
+                                                points="10 14 6 10 10 6"></polyline>
+                                            <polyline fill="none" stroke="#000" stroke-width="1.03"
+                                                points="14 14 10 10 14 6"></polyline>
+                                        </svg>
+                                    </span>
+                                    <span class="uk-text-middle">Изменить заказ</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(62782636, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/15971443" style="position:absolute; left:-9999px;" alt="" /></div></noscript>

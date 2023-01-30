@@ -1,0 +1,50 @@
+{
+    "dadata": {
+        "token": "13f5f6eff01265c9868d04afe599df0f925ec2e4",
+        "secret": "bc7acf343ae35680acd816ed68930cca099993c4"
+    },
+    "geohelper": {
+        "token": "DZ7bsqtCXaz6FlarYMWy7kYuaYwKleiK"
+    },
+    "apiship": {
+        "token": "896f7df3f27f6dc615674148ae09e6c3"
+    },
+    "retailcrm": {
+        "token": "ftYtUA4HnJNWAqQUQgBoNBpzrQGaT47r",
+        "apiPath": "https://kolt-90.retailcrm.ru/api/v5/",
+        "shop": "on-looker-ru"
+    },
+    "tinkoff": {
+        "terminal_id": "1634973854647",
+        "password": "yv38p5xfarqlyu6n",
+        "email_company": "info@on-looker.ru",
+        "taxation": "usn_income",
+        "payment_method": "full_prepayment",
+        "payment_object": "commodity",
+        "language": "ru"
+    },
+    "tinkoff_credit": {
+        "shopId": "22bd89d1-6f09-4ee0-a95e-cbf2ec6fb06a",
+        "showcaseId": "86b4771e-2ee9-4817-870f-3ff845dcfc81",
+        "promoCode": "installment_0_0_3_5,19",
+        "min_price": "5000",
+        "max_price": "500000",
+        "demo": "1"
+    },
+    "metrika": {
+        "addtocart": {
+            "addCart-m84": "65,63",
+            "addCart-s6": "66"
+        },
+        "preorder": {
+            "preorder-m84": "65,63",
+            "preorder-s6": "66"
+        }
+    },
+    "atol": {
+        "login": "f0aeaf16-e6f9-4a4a-817b-16d23b424e59",
+        "pass": "S2ktKzk6",
+        "group": "group_code_33100",
+        "inn": "351100903336"
+    }
+}

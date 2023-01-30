@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link href="/templates/yootheme/css/theme.9.css" rel="stylesheet" />
+    <link href="/templates/yootheme/css/custom.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="/templates/yootheme/vendor/assets/uikit/dist/js/uikit.min.js"></script>
+</head>
+<body>
+    <div class="uk-section-default uk-section">
+        <div class="uk-container">
+            <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin uk-grid uk-grid-stack" uk-grid="">
+                <div class="uk-first-column">
+                    <!--начало-->
+                    <div class="step-1">
+                        <h2 class="uk-text-warning">Шаг 1</h2>
+                        <div class="uk-h3">Дата прошивки устройства:</div>
+                        <div class="uk-margin-top">
+                            <label>
+                                <input type="radio" name="step1_date" value="1" checked> до 23.06.2022 (включительно)
+                            </label>
+                        </div>
+                        <div class="uk-margin-top">
+                            <label>
+                                <input type="radio" name="step1_date" value="2"> после 23.06.2022
+                            </label>
+                        </div>
+                        <div class="uk-margin-top">
+                            <a class="uk-text-warning madal1" href="#">Где смотреть дату прошивки</a>
+                        </div>
+                        <div class="uk-margin uk-text-center">
+                            <button class="step-1-btn uk-button uk-button-default" title="Далее">
+                                <span class="uk-text-middle">Далее</span>
+                                <span uk-icon="chevron-double-right" class="uk-icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="chevron-double-right">
+                                        <polyline fill="none" stroke="#000" stroke-width="1.03" points="10 6 14 10 10 14"></polyline>
+                                        <polyline fill="none" stroke="#000" stroke-width="1.03" points="6 6 10 10 6 14"></polyline>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="step-2 uk-hidden">
+                        <h2 class="uk-text-warning">Шаг 2</h2>
+                        <div class="step-2-1 uk-hidden">
+                            <div class="uk-h3">Заказывали устройство:</div>
+                            <div class="uk-margin-top">
+                                <label>
+                                    <input type="radio" name="step21_date" value="1" checked> до 1 марта 2022 года
+                                </label>
+                            </div>
+                            <div class="uk-margin-top">
+                                <label>
+                                    <input type="radio" name="step21_date" value="2"> после 1 марта 2022 года
+                                </label>
+                            </div>
+                        </div>
+                        <div class="step-2-2 uk-hidden">
+                            <div class="uk-h3">Индекс прошивки:</div>
+                            <div class="uk-margin-top">
+                                <label>
+                                    <input type="radio" name="step22_date" value="1" checked> 125
+                                </label>
+                            </div>
+                            <div class="uk-margin-top">
+                                <label>
+                                    <input type="radio" name="step22_date" value="2"> 225
+                                </label>
+                            </div>
+                            <div class="uk-margin-top">
+                                <a class="uk-text-warning madal2" href="#">Где смотреть индекс прошивки</a>
+                            </div>
+                        </div>
+                        <div class="uk-margin uk-text-center">
+                            <button class="step-2-btn uk-button uk-button-default" title="Далее">
+                                <span class="uk-text-middle">Далее</span>
+                                <span uk-icon="chevron-double-right" class="uk-icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="chevron-double-right">
+                                        <polyline fill="none" stroke="#000" stroke-width="1.03" points="10 6 14 10 10 14"></polyline>
+                                        <polyline fill="none" stroke="#000" stroke-width="1.03" points="6 6 10 10 6 14"></polyline>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div id="step2_btn_back" class="pull-left">
+                                <span class="uk-text-warning" title="Назад" style="cursor: pointer">
+                                    <span uk-icon="chevron-double-left" class="uk-icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="chevron-double-left">
+                                            <polyline fill="none" stroke="#000" stroke-width="1.03" points="10 14 6 10 10 6"></polyline>
+                                            <polyline fill="none" stroke="#000" stroke-width="1.03" points="14 14 10 10 14 6"></polyline>
+                                        </svg>
+                                    </span>
+                                    <span class="uk-text-middle">Назад</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-3 uk-hidden">
+                        <h2 class="uk-text-warning">Шаг 3</h2>
+                        <div class="step-3-1 uk-hidden">
+                            <div class="uk-margin-top">
+                                <div class="uk-margin-top">Сначала обновите прошивку до  версии S6_21125_202206231746_RE_c2399_n5-XGCGPSRU-0101</div>
+                                <div class="uk-margin-top">1) Установите базу согласно инструкции из радела: "9.1 Обновление прошивки устройства"</div>
+                                <div class="uk-margin-top">2) Установите базу согласно инструкции из радела: "9.2 Обновление базы у модуля GPS"</div>
+                                <div class="uk-margin-top">
+                                    <button onclick="window.location='/путь_от_корня_к_файлу.zip'" class="step-3-1-btn uk-button uk-button-default" title="Скачать прошивку и базу">
+                                        <span class="uk-text-middle">Скачать прошивку и базу</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-3-2 uk-hidden">
+                            <div class="uk-margin-top">
+                                <div class="uk-margin-top">Сначала обновите прошивку до S6_21225_202206231746_RE_c2399_n5-XGCGPSRU-0101</div>
+                                <div class="uk-margin-top">1) Установите базу согласно инструкции из радела: "9.1 Обновление прошивки устройства"</div>
+                                <div class="uk-margin-top">2) Установите базу согласно инструкции из радела: "9.2 Обновление базы у модуля GPS"</div>
+                                <div class="uk-margin-top">
+                                    <button onclick="window.location='/путь_от_корня_к_файлу.zip'" class="step-3-2-btn uk-button uk-button-default" title="Скачать прошивку и базу">
+                                        <span class="uk-text-middle">Скачать прошивку и базу</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-3-3 uk-hidden">
+                            <div class="uk-margin-top">
+                                <div class="uk-margin-top">Скачать базу для устройства с прошивкой от 23.06.2022г и новее, и покупкой устройства до 1 марта 2022 года:</div>
+                                <div class="uk-margin-top">
+                                    <button onclick="window.location='/путь_от_корня_к_файлу.zip'" class="step-3-3-btn uk-button uk-button-default" title="Скачать прошивку и базу">
+                                        <span class="uk-text-middle">Скачать базу</span>
+                                    </button>
+                                </div>
+                                <div class="uk-margin-top">Установите базу согласно инструкции из радела: "9.2 Обновление базы у модуля GPS"</div>
+                            </div>
+                        </div>
+                        <div class="step-3-4 uk-hidden">
+                            <div class="uk-margin-top">
+                                <div class="uk-margin-top">Скачать базу для устройства с прошивкой от 23.06.2022г и новее, и покупкой устройства после 1 марта 2022 года:</div>
+                                <div class="uk-margin-top">
+                                    <button onclick="window.location='/путь_от_корня_к_файлу.zip'" class="step-3-4-btn uk-button uk-button-default" title="Скачать прошивку и базу">
+                                        <span class="uk-text-middle">Скачать базу</span>
+                                    </button>
+                                </div>
+                                <div class="uk-margin-top">Установите базу согласно инструкции из радела: "9.2 Обновление базы у модуля GPS"</div>
+                            </div>
+                        </div>
+                        <div class="uk-margin uk-text-center">
+                            <div id="step3_btn_back" class="pull-left">
+                                <span class="uk-text-warning" title="Назад" style="cursor: pointer">
+                                    <span uk-icon="chevron-double-left" class="uk-icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="chevron-double-left">
+                                            <polyline fill="none" stroke="#000" stroke-width="1.03" points="10 14 6 10 10 6"></polyline>
+                                            <polyline fill="none" stroke="#000" stroke-width="1.03" points="14 14 10 10 14 6"></polyline>
+                                        </svg>
+                                    </span>
+                                    <span class="uk-text-middle">Назад</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        jQuery(function($){
+                            $('.madal1').click(function(){
+                                UIkit.modal.alert('Где смотреть дату прошивки <img src="/images/logo-mob.svg">', {center: true});
+                            });
+
+                            $('.madal2').click(function(){
+                                UIkit.modal.alert('Где смотреть индекс прошивки', {center: true});
+                            });
+
+                            $('.step-1-btn').click(function(){
+                                $('.step-1').addClass('uk-hidden');
+                                $('.step-2').removeClass('uk-hidden');
+
+                                if ($('input[name="step1_date"]:checked').val() == 1) {
+                                    $('.step-2-1').addClass('uk-hidden');
+                                    $('.step-2-2').removeClass('uk-hidden');
+                                } else {
+                                    $('.step-2-2').addClass('uk-hidden');
+                                    $('.step-2-1').removeClass('uk-hidden');
+                                }
+                            });
+
+                            $('#step2_btn_back').click(function(){
+                                $('.step-2, .step-2-1, .step-2-2').addClass('uk-hidden');
+                                $('.step-3-1, .step-3-2, .step-3-3, .step-3-4').addClass('uk-hidden');
+                                $('.step-1').removeClass('uk-hidden');
+                            });
+
+                            $('.step-2-btn').click(function(){
+                                $('.step-2').addClass('uk-hidden');
+                                $('.step-3').removeClass('uk-hidden');
+
+                                if ($('input[name="step1_date"]:checked').val() == 1) {
+                                    if ($('input[name="step22_date"]:checked').val() == 1) {
+                                        $('.step-3-2').addClass('uk-hidden');
+                                        $('.step-3-1').removeClass('uk-hidden');
+                                    } else {
+                                        $('.step-3-1').addClass('uk-hidden');
+                                        $('.step-3-2').removeClass('uk-hidden');
+                                    }
+                                } else {
+                                    if ($('input[name="step21_date"]:checked').val() == 1) {
+                                        $('.step-3-4').addClass('uk-hidden');
+                                        $('.step-3-3').removeClass('uk-hidden');
+                                    } else {
+                                        $('.step-3-3').addClass('uk-hidden');
+                                        $('.step-3-4').removeClass('uk-hidden');
+                                    }
+                                }
+                            });
+
+                            $('#step3_btn_back').click(function(){
+                                $('.step-3').addClass('uk-hidden');
+                                $('.step-2').removeClass('uk-hidden');
+                                $('.step-3-1, .step-3-2, .step-3-3, .step-3-4').addClass('uk-hidden');
+                            });
+                        });
+                    </script>
+                    <!--конец-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

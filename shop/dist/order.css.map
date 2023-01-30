@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/order/style.scss"],"names":[],"mappings":"AAAA;AACA,gBAAgB;;AAEhB;AACA,gBAAgB","file":"order.css","sourcesContent":[".confirm-type {\n  display: none; }\n\n.order-summ {\n  display: none; }\n"],"sourceRoot":""}

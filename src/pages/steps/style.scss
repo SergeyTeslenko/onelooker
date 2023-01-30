@@ -1,0 +1,59 @@
+html, body {
+    overflow: unset !important;
+}
+
+.selectDelivery.selected {
+    background: #00d3a7!important;
+}
+
+#products {
+    .remove {
+        background-color: #f44336;
+    }
+}
+
+.searchAddress, .searchCountry {
+    position: relative;
+    .selectList {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 5px 0 0 0;
+        z-index: 100;
+        list-style: none;
+        background-color: #1f1f1f;
+        border: 2px solid #323232;
+        border-radius: 16px;
+        display: none;
+        li {
+            button {
+                outline: none;
+                width: 100%;
+                background-color: transparent;
+                border: 0;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 16px;
+                text-align: left;
+                &:hover {
+                    background-color: #02c0d0;
+                }
+            }
+        }
+    }
+}
+
+#mapPvz {
+    width: 100%;
+    height: 400px;
+    .selectPvz {
+        background: #02c0d0;
+        border: none;
+        font-size: 14px;
+        padding: 10px 20px;
+        margin: 10px 0 5px 0;
+        border-radius: 12px;
+    }
+}

@@ -1,0 +1,194 @@
+
+<link rel="stylesheet" href="/widget/shop/dist/theme.css">
+      <style>
+         #page\#0-1-0-0 .uk-grid-divider.uk-grid-stack>.uk-grid-margin::before {
+         border-top: 2px solid #282828
+         }
+         #page\#0-1-0-5 {
+         border: 2px solid #282828;
+         padding: 20px
+         }
+         #page\#0-1-0-6 {
+         border: 2px solid #282828;
+         padding: 20px
+         }
+         #page\#0-1-0-7 {
+         border: 2px solid #282828;
+         padding: 20px
+         }
+         #page\#0-1-0-8 {
+         border: 2px solid #282828;
+         padding: 20px
+         }
+         #page\#0-1-0-10 .el-content {
+         text-align: center
+         }
+      </style>
+      <link rel="stylesheet" href="/widget/shop/dist/order.css">
+      <div class="tm-page">
+          <div class="lds-wrapper"></div>
+          <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+         <!-- Builder #page -->
+         <div class="uk-section-default uk-section">
+            <div class="uk-container">
+               <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin uk-grid uk-grid-stack"
+                  uk-grid="">
+                  <div class="uk-first-column">
+                     <h1 class="uk-heading-xlarge"> Номер вашего заказа: <span id="order_id"></span> </h1>
+                     <h2 class="uk-h3 info-order-text info-imposed"> Пожалуйста, проверьте заказ, ваши контакты и условия
+                        доставки. Далее подтвердите заказ с помощью кнопки "Подтвердить
+                        заказ" для подготовки заказа к отправке. 
+                     </h2>
+                      <h2 class="uk-h3 info-order-text info-bank-online"> Пожалуйста, проверьте заказ, ваши контакты и условия доставки. Далее оплатите заказ с помощью кнопки "Оплатить заказ онлайн" для подготовки заказа к отправке.
+                      </h2>
+                      <h2 class="uk-h3 info-order-text info-credit">Пожалуйста, проверьте заказ, ваши контакты и условия доставки. Далее перейдите к оплате заказа в кредит, по кнопке "Оформить покупку в кредит". Откроется сайт Тинькофф-Банка для оформления заявки на кредит.
+                      </h2>
+                      <h2 class="uk-h3 info-order-text info-installment">Пожалуйста, проверьте заказ, ваши контакты и условия доставки. Далее перейдите к оплате заказа в рассрочку, по кнопке "Оформить покупку в рассрочку". Откроется сайт Тинькофф-Банка для оформления заявки на рассрочку.
+                      </h2>
+                      <h2 class="uk-h3 info-order-text info-bank-sbp">Пожалуйста, проверьте заказ, ваши контакты и условия доставки. Далее оплатите заказ с помощью кнопки "Оплатить заказ через СБП" для подготовки заказа к отправке.
+                      </h2>
+                     <h2 class="uk-h3 uk-heading-bullet uk-text-warning"> Состав заказа:
+                     </h2>
+                  </div>
+               </div>
+               <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin uk-grid uk-grid-stack"
+                  uk-grid="">
+                  <div class="uk-first-column">
+                     <div id="page#0-1-0-0" class="uk-margin">
+                        <div id="order-products" class="uk-child-width-1-1 uk-child-width-1-1@m uk-grid-small uk-grid-divider uk-grid-match uk-grid uk-grid-stack" uk-grid="">
+                           
+                        </div>
+                     </div>
+                     <h3 class="uk-h3 uk-heading-bullet uk-text-warning"> Информация о
+                        заказе:
+                     </h3>
+                     <div class="uk-panel uk-margin">Получатель: <span id="order-contact"></span>
+                        <br>Номер телефона: <span id="order-phone"></span>
+                        <span style="display: none"><br>E-mail: <span id="order-email"></span></span>
+                        <br>Способ доставки: <span id="order-delivery-type"></span>
+                        <br>Адрес доставки: <span id="order-delivery-address"></span>
+                        <br>Стоимость доставки: <span id="order-delivery-cost"></span> руб.
+                        <br>Срок доставки: <span id="order-delivery-day"></span> дн (Без учёта дня заказа)
+                        <br>Способ оплаты: <span id="order-payments-type"></span>
+                        <br> Статус заказа: <b id="order-status"></b>
+                     </div>
+                     <h1 class="uk-h3"> Ваша скидка: <span id="order-sale"></span> руб.
+                        <!--<br>Наценка: <span id="order-margin"></span> руб.-->
+                        <span class="order-summ" id="order-summ-1"><br><br>Всего к оплате: <span></span> руб.</span>
+                        <span class="order-summ" id="order-summ-2"><br><br>Сумма заказа: <span></span> руб.</span>
+                     </h1>
+                     <div class="uk-panel uk-margin uk-text-center confirm-type" id="confirm-type-imposed">
+                        <a
+                           href="https://on-looker.ru/confirm"
+                           class="hide_status el-content uk-button uk-button-default uk-button-large uk-text-center uk-text-left@s"
+                           uk-scroll="">
+                        👉 Подтвердить заказ
+                        </a>
+                        <p>После подтверждения заказа, мы проверим товар, тщательно
+                           упакуем посылку и отправим заказ.
+                        </p>
+                     </div>
+                     <div class="uk-panel uk-margin uk-text-center confirm-type" id="confirm-type-e-money">
+                        <a
+                           href="#"
+                           class="el-content uk-button uk-button-default uk-button-large uk-text-center uk-text-left@s"
+                           uk-scroll="">
+                        👉 Оплатить заказ онлайн
+                        </a>
+                        <p>После оплаты заказа, мы проверим товар, тщательно упакуем
+                           посылку и отправим заказ.
+                        </p>
+                     </div>
+                     <div class="uk-panel uk-margin uk-text-center confirm-type" id="confirm-type-bank-online">
+                        <a
+                           href="#"
+                           class="el-content uk-button uk-button-default uk-button-large uk-text-center uk-text-left@s"
+                           uk-scroll="">
+                        👉 Оплатить заказ онлайн
+                        </a>
+                        <p>После оплаты заказа, мы проверим товар, тщательно упакуем
+                           посылку и отправим заказ.
+                        </p>
+                     </div>
+                      <div class="uk-panel uk-margin uk-text-center confirm-type" id="confirm-type-bank-sbp">
+                          <a
+                                  href="#"
+                                  class="el-content uk-button uk-button-default uk-button-large uk-text-center uk-text-left@s"
+                                  uk-scroll="">
+                              👉 Оплатить заказ через СБП
+                          </a>
+                          <p>После оплаты заказа, мы проверим товар, тщательно упакуем
+                              посылку и отправим заказ.
+                          </p>
+                      </div>
+                     <div class="uk-panel uk-margin uk-text-center confirm-type" id="confirm-type-credit">
+                        <a
+                           href="#"
+                           class="el-content uk-button uk-button-default uk-button-large uk-text-center uk-text-left@s"
+                           uk-scroll="">
+                        👉 Оформить покупку в кредит
+                        </a>
+                        <p>После одобрения кредита банком, мы проверим товар, тщательно
+                           упакуем посылку и отправим заказ.
+                        </p>
+                     </div>
+                      <div class="uk-panel uk-margin uk-text-center confirm-type" id="confirm-type-installment">
+                          <a
+                                  href="#"
+                                  class="el-content uk-button uk-button-default uk-button-large uk-text-center uk-text-left@s"
+                                  uk-scroll="">
+                              👉 Оформить покупку в рассрочку
+                          </a>
+                          <p>После одобрения рассрочки банком, мы проверим товар, тщательно
+                              упакуем посылку и отправим заказ.
+                          </p>
+                      </div>
+                     <div class="uk-panel uk-margin uk-text-center confirm-type" id="confirm-type-bank-transfer">
+                        <h3>
+                           Реквизиты для оплаты заказа: номер карты
+                           6546-5465-4654-6546
+                        </h3>
+                        <p>После поступления оплаты, ваш заказ будет подтверждён. Далее
+                           мы проверим товар, тщательно упакуем посылку и отправим
+                           заказ.
+                        </p>
+                     </div>
+                     <div class="uk-panel uk-margin order-info-text">На данной странице можно подтвердить или
+                        отменить заказ, а так же проверить статус заказа. Ссылка на
+                        данную страницу отправлена вам в СМС сообщении. Сохраните эту
+                        ссылку для отслеживания статуса заказа.
+                        Если данные в заказе требуется изменить, пожалуйста напишите в
+                        онлайн-чат.
+                     </div>
+                     <div id="page#0-1-0-10"
+                        class="uk-margin uk-width-2xlarge uk-margin-auto">
+                        <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-grid-match uk-grid"
+                           uk-grid="">
+                           <div class="uk-first-column">
+                              <div
+                                 class="el-item uk-panel uk-margin-remove-first-child">
+                                 <div
+                                    class="el-content uk-panel uk-margin-top">
+                                    <a href="#"
+                                       onclick="Verbox('openSupport'); return false;">
+                                    Задать вопрос в
+                                    онлайн-чат
+                                    </a> 
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="">
+                              <div class="el-item uk-panel uk-margin-remove-first-child">
+                                 <div class="el-content uk-panel uk-margin-top">
+                                    <a href="#" id="order-cancel">Отменить заказ</a> 
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   <script src="/widget/shop/dist/order.js"></script>
